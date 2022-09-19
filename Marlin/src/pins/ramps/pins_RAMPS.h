@@ -156,6 +156,20 @@
   #define E0_CS_PIN                           42
 #endif
 
+#ifndef Y2_STEP_PIN
+  #define Y2_STEP_PIN                         36
+#endif
+#ifndef Y2_DIR_PIN
+  #define Y2_DIR_PIN                          34
+#endif
+#ifndef Y2_ENABLE_PIN
+  #define Y2_ENABLE_PIN                       30
+#endif
+#ifndef Y2_CS_PIN
+  #define Y2_CS_PIN                           44
+#endif
+
+/* Use if want to use E0 On Ramps 1.6
 #ifndef E1_STEP_PIN
   #define E1_STEP_PIN                         36
 #endif
@@ -168,6 +182,7 @@
 #ifndef E1_CS_PIN
   #define E1_CS_PIN                           44
 #endif
+*/
 
 //
 // Temperature Sensors
@@ -205,7 +220,7 @@
   #define MOSFET_D_PIN                        -1
 #endif
 
-#define HEATER_0_PIN                MOSFET_A_PIN
+#define HEATER_0_PIN                MOSFET_C_PIN
 
 #if FET_ORDER_EFB                                 // Hotend, Fan, Bed
   #define HEATER_BED_PIN            MOSFET_C_PIN
